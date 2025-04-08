@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FilesFragment">
+
+    <!-- ImageView for displaying the signature -->
+    <ImageView
+        android:id="@+id/imageViewSignature"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:visibility="gone" />
+
+    <!-- Help Button -->
+    <ImageButton
+        android:id="@+id/button_help"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_help"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    />
+
+    <!-- Button to decrypt the signature -->
+    <Button
+        android:id="@+id/button_open_file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解密签名"
+        android:layout_centerInParent="true" />
+
+    <!-- Button to save the signature -->
+    <Button
+        android:id="@+id/button_save_signature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保存签名"
+        android:layout_below="@id/button_open_file"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+    <!-- Button to cancel the display of the signature -->
+    <Button
+        android:id="@+id/button_cancel_display"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消展示"
+        android:layout_below="@id/button_save_signature"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

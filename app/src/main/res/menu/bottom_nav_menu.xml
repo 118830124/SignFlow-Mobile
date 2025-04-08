@@ -1,0 +1,12 @@
+<!-- res/menu/bottom_navigation_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_files"
+        android:icon="@drawable/ic_files"
+        android:title="@string/files" />
+
+    <item
+        android:id="@+id/navigation_sign"
+        android:icon="@drawable/ic_sign"
+        android:title="@string/signature" />
+</menu>
